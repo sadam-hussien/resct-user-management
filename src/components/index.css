@@ -1,0 +1,9 @@
+/* 
+  * import all css component 
+  * import this file in main css file 
+*/
+
+/* /modal */
+@import url(./modal/index.css);
+/* table  */
+@import url(./table/index.css);

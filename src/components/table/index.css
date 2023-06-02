@@ -1,0 +1,93 @@
+.table-main-title {
+  color: var(--dark-color);
+}
+
+.main-table-content {
+  --col-height: 64px;
+  padding: 0;
+  border: none;
+}
+
+.table-responsive {
+  overflow-y: hidden;
+}
+
+.main-table,
+.main-table thead {
+  vertical-align: middle;
+  font-size: 0.92rem;
+}
+
+.main-table th {
+  color: var(--dark-color);
+}
+.main-table tr {
+  height: 60px;
+}
+
+.main-table th,
+.main-table td {
+  padding: 0 20px;
+}
+
+/* select input -> checkbox  */
+.table-custom-checkbox-label {
+  cursor: pointer;
+}
+
+.table-custom-checkbox {
+  --w: 22px;
+  width: var(--w);
+  height: var(--w);
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.table-custom-checkbox:hover {
+  border-color: var(--bs-primary);
+}
+
+.table-custom-checkbox .icon {
+  opacity: 0;
+  color: var(--bs-white);
+}
+
+.table-custom-checkbox-label input:checked ~ .table-custom-checkbox {
+  background-color: var(--bs-primary);
+}
+
+.table-custom-checkbox-label input:checked ~ .table-custom-checkbox .icon {
+  opacity: 1;
+}
+
+/* inner actions  */
+.main-table-inner-actions button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+.main-table-inner-actions button:hover {
+  background-color: transparent;
+}
+
+.main-table-inner-actions-view,
+.main-table-inner-actions-view:hover {
+  color: var(--bs-primary);
+}
+
+.main-table-inner-actions-edit,
+.main-table-inner-actions-edit:hover {
+  color: var(--dark-color);
+}
+
+.main-table-inner-actions-delete,
+.main-table-inner-actions-delete:hover {
+  color: var(--bs-danger);
+}

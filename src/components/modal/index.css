@@ -1,0 +1,35 @@
+.custom-modal,
+.modal-backdrop {
+  z-index: 99999;
+}
+
+.custom-dialog-modal {
+  /* width: auto; */
+  width: 750px;
+  max-width: 95%;
+}
+
+.custom-dialog-modal .modal-content {
+  border: none;
+  background: var(--bs-white);
+  padding: 63px;
+}
+
+@media (max-width: 576px) {
+  .custom-dialog-modal .modal-content {
+    padding: 20px;
+  }
+}
+
+.custom-dialog-modal .modal-header {
+  padding: 0;
+  border-bottom: none;
+}
+
+.custom-dialog-modal .modal-title {
+  color: var(--dark-color);
+}
+
+.custom-dialog-modal .modal-body {
+  padding: 0;
+}
